@@ -8,11 +8,16 @@ This is in a pre-alpha stage of development! as of 8/20/22, this framework has a
   - building the typescript and components to the website
   - custom tag rendering with components.
   - assembly script functionality (not full implementation into build project command)
-  ## Future features
+  ### Future features
   - C++ emscripten & dependency package system based on napa
   - rust & web-pack for rust wasm modules
   - services (api calls to a server)
-  - 
+  - css encapsulation per component
+  - main configuration file (features, build config, linting, etc.)
+  - better tests (cypress)
+  - data-attributes, and classes to custom tags
+  - SCSS integration
+  - directive like feature (similar to angular)
 
 # Commands
  - assemble-create-project -> create a generic assemble project to build your website.
