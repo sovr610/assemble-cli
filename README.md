@@ -3,12 +3,12 @@ Assemble is a front-end web framework that works with react TSX style components
 
 # Important & News
 This is in a pre-alpha stage of development! as of 8/20/22, this framework has a few features working, but most of the features are broken or not even implemented. 
- ## Features implemented
+  ### Features implemented
   - TSX components
   - building the typescript and components to the website
   - custom tag rendering with components.
   - assembly script functionality (not full implementation into build project command)
- ## Future features
+  ## Future features
   - C++ emscripten & dependency package system based on napa
   - rust & web-pack for rust wasm modules
   - services (api calls to a server)
