@@ -1,0 +1,65 @@
+{
+    "env": {
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "plugin:sonarjs/recommended",
+      "plugin:jsdoc/recommended",
+      "eslint:recommended",
+      "plugin:node/recommended"
+    ],
+    "plugins": [
+      "sonarjs",
+      "markdown",
+      "jsdoc",
+      "xss"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2021,
+      "sourceType": "module"
+      
+    },
+    "rules": { 
+
+      "node/exports-style": ["error", "module.exports"],
+      "node/file-extension-in-import": ["error", "always"],
+      "node/prefer-global/buffer": ["error", "always"],
+      "node/prefer-global/console": ["error", "always"],
+      "node/prefer-global/process": ["error", "always"],
+      "node/prefer-global/url-search-params": ["error", "always"],
+      "node/prefer-global/url": ["error", "always"],
+      "node/prefer-promises/dns": "error",
+      "node/prefer-promises/fs": "warn",
+      "sonarjs/no-identical-expressions": "error",
+      "sonarjs/elseif-without-else": "warn",
+      "sonarjs/max-switch-cases": "warn",
+      "sonarjs/no-collapsible-if": "warn",
+      "sonarjs/no-collection-size-mischeck": "warn",
+      "sonarjs/no-duplicate-string": "warn",
+      "sonarjs/no-duplicated-branches": "warn",
+      "sonarjs/no-gratuitous-expressions": "warn",
+      "sonarjs/no-identical-functions": "warn",
+      "sonarjs/no-inverted-boolean-check": "warn",
+      "sonarjs/no-nested-switch": "warn",
+      "sonarjs/no-nested-template-literals": "warn",
+      "sonarjs/no-redundant-boolean": "warn",
+      "sonarjs/no-redundant-jump": "warn",
+      "sonarjs/no-same-line-conditional": "warn",
+      "sonarjs/no-small-switch": "warn",
+      "no-unused-vars": "warn",
+      "no-case-declarations": "warn",
+      "node/no-unsupported-features/es-syntax": [
+        "error",
+        { ignores: ["modules"] },
+      ],
+
+    },
+    "overrides": [
+      {
+        // 2. Enable the Markdown processor for all .md files.
+        "files": ["**/*.md"],
+        "processor": "markdown/markdown"
+      }
+    ]
+  }

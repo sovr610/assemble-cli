@@ -1,0 +1,76 @@
+{
+  "name": "assemble-cli",
+  "version": "1.0.0",
+  "description": "the cli commands to assemble framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint . --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sovr610/assemble-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "assemble",
+    "framework",
+    "web",
+    "webassembly",
+    "assemblyscript",
+    "jsx",
+    "typescript",
+    "html"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "bin": {
+    "assemble-create-project": "node-bin/create-project",
+    "assemble-add-component": "node-bin/create-component",
+    "assemble-add-service": "node-bin/add-service",
+    "assemble-add-wasm": "node-bin/add-wasm",
+    "assemble-install": "node-bin/init",
+    "assemble-build": "node-bin/build-project",
+    "assemble": "node-bin/assemble"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Parker Bidigare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sovr610/assemble-cli/issues"
+  },
+  "homepage": "https://github.com/sovr610/assemble-cli#readme",
+  "dependencies": {
+    "appdata-path": "^1.0.0",
+    "arg": "^5.0.2",
+    "esm": "^3.2.25",
+    "npm": "^8.18.0",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsdoc": "^39.3.6",
+    "eslint-plugin-markdown": "^3.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-sonarjs": "^0.15.0",
+    "eslint-plugin-xss": "^0.1.12",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1"
+  }
+}
