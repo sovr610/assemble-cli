@@ -31,7 +31,7 @@ This is in a pre-alpha stage of development! as of 8/20/22, this framework has a
  below is example code for you building your own component to be added to the website.
  <img width="434" alt="entity-framework-component" src="https://user-images.githubusercontent.com/5156960/185767967-dc6e15da-ebe0-483d-9497-a9424df1ef08.png">
  
- you need to set a your element and the html in it, then add it to the render function. the first argument is the element, and the second argument is for which tag you want to associate this element. You will need to add the tag to your `index.html` to be shown on the website.
+ you need to set your element and the html in it, then add it to the render function. the first argument is the element, and the second argument is for which tag you want to associate this element. You will need to add the tag to your `index.html` to be shown on the website.
  
  # Webassembly
  We are currently working on integrating C++, Rust and assembly script to the assemble framework. the order of getting the webassembly modules working are
