@@ -348,7 +348,9 @@ export function createProject(args) {
         initHtml.split(/\r?\n/).forEach((line, ind) => {
 
             if (!line.includes('import { add } from "./build/debug.js";') && !line.includes('document.body.innerText = add(1, 2);') && !line.includes('import { add } from "./build/release.js";')) {
-                newerHtml = newerHtml + line + '\n';
+                if(line != null) {
+                    newerHtml = newerHtml + line + '\n';
+                }
             }
         });
 
@@ -409,7 +411,9 @@ export function buildProject(args) {
                 if (!html.includes('<script src="./src/components/' + ele.name + '/' + ele.name + '.component.tsx"></script>')) {
                     newHtml = newHtml + '<script src="./src/components/' + ele.name + '/' + ele.name + '.component.tsx"></script>' + '\n' + line;
                 } else {
-                    newHtml = newHtml + line + '\n';
+                    if(line != null){
+                        newHtml = newHtml + line + '\n';
+                    }
                 }
             } else {
 
@@ -454,13 +458,17 @@ export function buildProject(args) {
                 if (!html.includes('<script src="./debug.js"></script>')) {
                     newHtml = newHtml + '<script src="./debug.js"></script>' + '\n' + line;
                 } else {
-                    newHtml = newHtml + line + '\n';
+                    if(line != null) {
+                        newHtml = newHtml + line + '\n';
+                    }
                 }
             } else {
                 if (!html.includes('<script src="./release.js"></script>')) {
                     newHtml = newHtml + '<script src="./release.js"></script>' + '\n' + line;
                 } else {
-                    newHtml = newHtml + line + '\n';
+                    if(line != null) {
+                        newHtml = newHtml + line + '\n';
+                    }
                 }
             }
         } else {
