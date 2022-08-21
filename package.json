@@ -1,7 +1,7 @@
 {
-  "name": "assemble-cli",
-  "version": "1.0.0",
-  "description": "the cli commands to assemble framework",
+  "name": "wafis-cli",
+  "version": "0.0.4-alpha",
+  "description": "wafis frot-end webassembly framework",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,18 +9,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sovr610/assemble-cli.git"
+    "url": "https://github.com/sovr610/Wafis.git"
   },
   "keywords": [
     "cli",
-    "assemble",
+    "wafis",
     "framework",
     "web",
     "webassembly",
     "assemblyscript",
     "jsx",
     "typescript",
-    "html"
+    "html",
+    "css",
+    "C++",
+    "rust",
+    "components"
   ],
   "engines": {
     "node": ">=16.0.0"
@@ -37,13 +41,13 @@
     ]
   },
   "bin": {
-    "assemble-create-project": "node-bin/create-project",
-    "assemble-add-component": "node-bin/create-component",
-    "assemble-add-service": "node-bin/add-service",
-    "assemble-add-wasm": "node-bin/add-wasm",
-    "assemble-install": "node-bin/init",
-    "assemble-build": "node-bin/build-project",
-    "assemble": "node-bin/assemble"
+    "wafis-create-project": "node-bin/create-project",
+    "wafis-add-component": "node-bin/create-component",
+    "wafis-add-service": "node-bin/add-service",
+    "wafis-add-wasm": "node-bin/add-wasm",
+    "wafis-install": "node-bin/init",
+    "wafis-build": "node-bin/build-project",
+    "wafis": "node-bin/assemble"
   },
   "publishConfig": {
     "access": "public"

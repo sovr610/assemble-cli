@@ -12,6 +12,7 @@ This is in a pre-alpha stage of development! as of 8/20/22, this framework has a
   - C++ emscripten & dependency package system based on napa
   - rust & web-pack for rust wasm modules
   - services (api calls to a server)
+  - Better cli, want more like `wafis component create --name menu`
   - css encapsulation per component
   - main configuration file (features, build config, linting, etc.)
   - better tests (cypress)
@@ -20,12 +21,12 @@ This is in a pre-alpha stage of development! as of 8/20/22, this framework has a
   - directive like feature (similar to angular)
 
 # Commands
- - wafis-create-project -> create a generic assemble project to build your website.
- - wafis-add-component -> add an individual component to be used in the website.
- - wafis-add-service -> add a service to call to a back-end server (usually for databases)
- - wafis-install -> installs rust/web-pack and emscripten to be used for generating wasm modules in C++ and rust.
- - wafis-build -> compiles wasm modules, compiles your comonents, and overall puts your project into a finalized website.
- - wafis -> general purpose command, at the moment it displays all the commands you can run.
+ - `wafis-create-project` -> create a generic assemble project to build your website.
+ - `wafis-add-component` -> add an individual component to be used in the website.
+ - `wafis-add-service` -> add a service to call to a back-end server (usually for databases)
+ - `wafis-install` -> installs rust/web-pack and emscripten to be used for generating wasm modules in C++ and rust.
+ - `wafis-build` -> compiles wasm modules, compiles your comonents, and overall puts your project into a finalized website.
+ - `wafis` -> general purpose command, at the moment it displays all the commands you can run.
  
  # components
  below is example code for you building your own component to be added to the website.
